@@ -1,0 +1,333 @@
+/* General Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+  }
+   
+
+html, body {
+    display: flex;
+    background: #333;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    background: url(images/background.png) center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    animation: fadeInBackground 2s ease-out;
+    filter: brightness(1.2);
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    color: #ff7200;
+    transition: color 0.3s ease;
+}
+
+.search{
+    width: 100px;
+    float: left;
+    margin-left: 170px;
+}
+
+
+
+/* Content */
+.content {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 80px 0 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease;
+    text-align: center;
+}
+
+.intro__header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.intro__content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    padding: 10px 0;
+    text-indent: 50px;
+}
+
+/* Table Header */
+.table__header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Table */
+.table__body table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInTable 2s ease, slideIn 2s ease; /* Added slideIn animation */
+}
+
+/* Table Header */
+.table__header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #444;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Body */
+.table__body {
+    overflow: hidden; /* Ensure any overflow is hidden */
+}
+
+.table__body table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInTable 2s ease, slideIn 2s ease; /* Add animations */
+    background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.9) 50%, #fff); /* Flag-like background */
+}
+
+/* Table Cells */
+.table__body th, .table__body td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8); /* Ensure text is readable */
+}
+
+/* Table Header */
+.table__body th {
+    background-color:grey;
+    color: #333;
+}
+
+/* Row Hover Effect */
+.table__body tr:hover {
+    background-color:grey;
+    transition: background 0.3s ease;
+}
+
+/* Image within Table Cells */
+.table__body img {
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Image + Text in Table Cells */
+.table__body td img + span {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeInTable {
+    from {
+        opacity: 0;
+        transform: translateX(50px); /* Slide effect */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(10);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.table__body table {
+    transition: transform 0.5s ease;
+}
+
+.table__body table.scroll-effect {
+    transform: translateX(5); 
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  

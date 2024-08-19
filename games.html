@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="games.css">
+    <title>Paris 2024 Olympics Summary</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">Paris 2024 Olympics Summary</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="athletes.html">ATHLETES</a></li>
+                <li><a href="games.html">OlYMPICS SUMMARY</a></li>
+                
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" placeholder="Type To text">
+            <button class="btn" onclick="search()">Search</button>
+        </div>
+    </div>
+
+    <main class="content">
+        <section class="intro">
+            <header class="intro__header">
+                <h1>Introduction to Paris 2024 Olympics</h1>
+            </header>
+            <section class="intro__content">
+                <p>
+                    The Olympic Games are a global sports competition where athletes represent their countries in various events. Held every four years, the Olympics are divided into two parts: the Summer Olympics, featuring warm-weather sports like swimming and gymnastics, and the Winter Olympics, which focus on cold-weather sports like skiing and ice skating. These events are staggered by two years.
+                </p>
+        
+                <p>
+                    The International Olympic Committee (IOC) also partners with the International Paralympic Committee (IPC) to host the Paralympic Games for athletes with disabilities, in the same venues as the Olympics. Additionally, the IOC organizes the Youth Olympics for athletes aged 15-18.
+                </p>
+        
+                <p>
+                    Since the modern Olympics began in 1896, political changes and rule violations have complicated the medal counts, with notable examples like the breakup of the Soviet Union impacting which countries receive credit for past medals.
+                </p>
+        
+                <p>
+                    Paris was awarded the 2024 Games at the 131st IOC Session in Lima, Peru. This event marked the centenary of the 1924 Paris and Chamonix Games. Paris 2024 also introduced breaking as a new Olympic sport, with events taking place in Paris and 16 additional cities, mainly for football.
+                </p>
+            </section>
+        </section>
+
+        <section class="table">
+            <header class="table__header">
+                <h1>Top 10 Countries by Medal Counts in 2024 Paris Olympics</h1>
+            </header>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Gold</th>
+                            <th>Silver</th>
+                            <th>Bronze</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="images/Usa flag.png" alt="USA">USA</td>
+                            <td>40</td>
+                            <td>44</td>
+                            <td>42</td>
+                            <td>126</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="images/china.png" alt="China">CHINA</td>
+                            <td>40</td>
+                            <td>27</td>
+                            <td>24</td>
+                            <td>91</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="images/japan.png" alt="Japan">JAPAN</td>
+                            <td>20</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img src="images/Australia.png" alt="Australia">AUSTRALIA</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>16</td>
+                            <td>53</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><img src="images/France.png" alt="France">FRANCE</td>
+                            <td>16</td>
+                            <td>26</td>
+                            <td>22</td>
+                            <td>64</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><img src="images/Netherlands.png" alt="Netherlands">NERTHERLANDS</td>
+                            <td>15</td>
+                            <td>7</td>
+                            <td>12</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><img src="images/Great Britain.png" alt="Great Britain">GREAT BRITIAN</td>
+                            <td>14</td>
+                            <td>22</td>
+                            <td>29</td>
+                            <td>65</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><img src="images/Republic of Korea.png" alt="Republic of Korea">REPUBLIC OF KOREA</td>
+                            <td>13</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><img src="images/Italy.png" alt="Italy">ITALY</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>15</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><img src="images/germany.png" alt="Germany">GERMANY</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>8</td>
+                            <td>33</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#"></a>ATHLETES</li>
+          <li class="menu__item"><a class="menu__link" href="#">OLympics Summary</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Education In Olympics</a></li>
+    
+        </ul>
+        <p>&copy;2024 Charles Jomoh| All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+</body>
+</html>
