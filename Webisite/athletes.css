@@ -162,8 +162,6 @@ ul li a:hover {
     .search {
         width: 100%;
         margin-top: 10px;
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .srch {
@@ -172,9 +170,8 @@ ul li a:hover {
     }
 
     .btn {
-        width: 100%;
-        border-radius: 5px;
-        margin-top: 10px;
+        width: 100px;
+        border-radius: 0 5px 5px 0;
     }
 
     .container {
@@ -203,4 +200,4 @@ ul li a:hover {
     .card p {
         font-size: 14px;
     }
-}
+   
